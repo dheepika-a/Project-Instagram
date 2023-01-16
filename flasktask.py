@@ -18,9 +18,8 @@ def add():
     for i in data:
         if i[0]==username and i[1]==password:
            return render_template("home.html")
-        else:
-           return render_template("index.html")
-    return render_template("index.html")
+
+    return render_template("indexfile.html")
 
 @app.route("/hello",methods=["POST","GET"])
 def dep():
@@ -40,7 +39,7 @@ def signup():
         conn.commit()
       
 
-    return render_template("signpage.html")
+    return render_template("index.html")
 
 @app.route("/showsign", methods=["POST","GET"])
 def signup_data():

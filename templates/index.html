@@ -5,34 +5,40 @@
     <meta http=-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, 
     initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/lgstyle.css')}}">
-    <title>Instagram UI</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/pageone.css')}}">
+    <title>Sign Up</title>
 </head>
-<!-- login page-->
+<!-- Signup page-->
 <body>
+    <p>After Create a account go to login page</p>
     <div class="container">
         <img src="./static/img/logo.PNG" class="brand-img">
         <div class="box">
-            
             <div class="heading"></div>
-            <form action="#" class="login-form" method="post" >
+            <form action="#" class="sign-form" method="post">
                 <div class="field">
-                    <input id="add" type="name" name="name" placeholder="Phone number, username, or email" />
-                    <label for="username">Phone number, username, or email</label>
+                    <input id="user" type="text" name="name" required="1" placeholder="Mobile Number or Email" />
+                    <label for="username">Mobile Number or email</label>
                 </div>
+                
                 <div class="field">
-                    <input id="sub" type="password" name="password" placeholder="password" />
-                    <label for="password">Password</label>
-                </div>
-                <button id="button" class="login-button" title="login" >Log In</button>
-                <div class="separator">
-
-                <a class="forgot-password" href="#">Forgot password?</a>
-                </div>
+                  <input id="fullname" type="name" name="fullname" required="1" placeholder="Enter Fullname" />
+                  <label for="username">Full Name</label>
+              </div>
+              <div class="field">
+                <input id="username" type="name" name="username" required="1" placeholder="Enter Username" />
+                <label for="username">User Name</label>
+            </div>
+            <div class="field">
+              <input id="password" type="password" name="password" required="1" placeholder="password" />
+              <label for="password">Password</label>
+          </div>
+                <button class="sign-button" title="sign up">Sign up</button>
+            
             </form>
         </div>
         <div class="box">
-            <p>Don't have an account? <a class="signup" href="/">Sign Up</a></p>
+            <p>Have an account? <a class="signup" href="/log">Login</a></p>
         </div>
     </div>
 
